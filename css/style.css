@@ -7,11 +7,7 @@ body {
 
 .white-popup {
     position: relative;
-
-
-
     width: 90%;
-
     margin: 0 auto;
 }
 
@@ -127,7 +123,21 @@ h1 {
 
 h1 #arisu-color {
     color: #fff;
+    -webkit-animation: color-change 12s infinite;
     animation: color-change 12s infinite;
+
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: #fff;
+    }
+    20% {
+        color: #ff0084;
+    }
+    40% {
+        color: #fff;
+    }
 
 }
 
@@ -146,7 +156,21 @@ h1 #arisu-color {
 
 h1 #saktos-color {
     color: #ff0084;
+    -webkit-animation: color-change-saktos 12s infinite;
     animation: color-change-saktos 12s infinite;
+
+}
+
+@-webkit-keyframes color-change-saktos {
+    0% {
+        color: #ff0084;
+    }
+    20% {
+        color: #fff;
+    }
+    40% {
+        color: #ff0084;
+    }
 
 }
 
@@ -332,24 +356,18 @@ i:hover {
     padding-bottom: 2%;
     color: #ff1184;
     font-size: 3em;
-
-    -moz-animation: bounce 1s infinite;
     -webkit-animation: bounce 1s infinite;
     animation: bounce 1s infinite;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
 
     0% {
-        -moz-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
     }
 
     50% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
@@ -357,8 +375,28 @@ i:hover {
 
 
     100% {
-        -moz-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+
+}
+
+@keyframes bounce {
+
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+
+
+    100% {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
     }
@@ -427,25 +465,23 @@ i:hover {
 
 
 
-.mfp-move-horizontal {
-    /* start state */
-    /* animate in */
-    /* animate out */
-}
-
 .mfp-move-horizontal .mfp-with-anim {
     opacity: 0;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
 }
 
 .mfp-move-horizontal.mfp-bg {
     opacity: 0;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .mfp-move-horizontal.mfp-ready .mfp-with-anim {
     opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
@@ -454,6 +490,7 @@ i:hover {
 }
 
 .mfp-move-horizontal.mfp-removing .mfp-with-anim {
+    -webkit-transform: translateX(50px);
     transform: translateX(50px);
     opacity: 0;
 }
@@ -461,8 +498,6 @@ i:hover {
 .mfp-move-horizontal.mfp-removing.mfp-bg {
     opacity: 0;
 }
-
-
 
 
 
@@ -482,10 +517,7 @@ i:hover {
         top: 20px;
         float: right;
         z-index: 1;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+
     }
 
     #top-nav #menuToggle #menu li {
@@ -504,14 +536,9 @@ i:hover {
         position: absolute;
         top: -7px;
         left: -5px;
-
         cursor: pointer;
-
         opacity: 0;
-        /* hide this */
         z-index: 2;
-        /* and place it over the hamburger */
-        -webkit-touch-callout: none;
     }
 
     #top-nav #menuToggle #menu li:not(:last-child):after {
@@ -603,12 +630,10 @@ i:hover {
         position: absolute;
         width: 267px;
         margin: -103px 0px 0px -200px;
-        /* padding: 50px; */
         overflow: hidden;
         padding-top: 105px;
         background: #ff0084;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
         -webkit-transform-origin: 0% 0%;
         transform-origin: 0% 0%;
         -webkit-transform: translate(0, -100%);
