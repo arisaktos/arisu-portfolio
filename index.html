@@ -32,6 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16465034-1"></script>
@@ -53,13 +54,14 @@
 <body>
 
     <header id="page-header">
-        <div id="page-header-title">
+       <div class="container">
+            <div class="row">
+            <div class="col-md-10 col-lg-5">
+    
             <h1><span id="arisu-color">Arisu</span><span id="saktos-color"> Saktos</span></h1>
             <h2>I create stuff, pretty stuff... I call them my little monsters! </h2>
-        </div>
-
-
-    </header>
+                </div>
+                 <div class="col-md-2 col-lg-7 to-the-left">
     <nav id="top-nav" role="navigation">
         <div id="menuToggle">
             <input type="checkbox" />
@@ -75,10 +77,17 @@
             </ul>
         </div>
     </nav>
+          </div>
+           </div></div>
+    </header>
 
-    <div class="clear"></div>
     <section class="middle-section" id="about-section">
-        <article id="about-section-descr">
+       
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6" id="about-section-descr">
+           
+           
             <p><span class="dotted-highlight">Hi there!</span>
             </p>
             <p> <span class="dotted-highlight">Me</span> in shortcut:</p>
@@ -93,23 +102,32 @@
             <p>
                 Hope you'll <span class="dotted-highlight">enjoy</span> browsing through my site :)
             </p>
-        </article>
+                </div>
+             <div class="col-sm-12 col-lg-6">
         <figure class="about-image-box">
 
             <img src="images/arisu-portfolio-about-second.jpg" alt="Alicja Arisu Wolkowska" class="head-image">
             <figcaption><i class="fa fa-arrow-up fa-3" aria-hidden="true"></i> <span>yes this is me... heavily photoshopped :D</span></figcaption>
         </figure>
-        <div class="clear"></div>
+                </div>
+                </div>
+        </div>
     </section>
 
-    <footer id="page-footer">
-        <div id="footer-inner">
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer-inner">
+  
             Get in touch: <a href="mailto:arisusaktos@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a><a href="https://www.flickr.com/photos/arisusaktos" target="blank"><i class="fa fa-flickr fa-2x" aria-hidden="true"></i></a><a href="https://codepen.io/arisusaktos/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a><a href="https://github.com/arisaktos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/alicja-wolkowska-8559b49b" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 
-            <p id="footer-copyright">&copy; Arisu Saktos 2017</p>
+            <p class="footer-copyright">&copy; Arisu Saktos 2017</p>
         </div>
-
+                </div></div>
     </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script async="" src="http://www.google-analytics.com/analytics.js"></script>
 
 </body>

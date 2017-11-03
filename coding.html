@@ -3,19 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Arisu Saktos</title>
-     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <title>Arisu Saktos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Portfolio of Alicja Wolkowska / Arisu Saktos. All sorts of creations :)">
     <meta name="keywords" content="arisu saktos, alicja szymalska, alicja wolkowska, artwork, creative, graphic design, designer, front end developer, arisu.co.uk, portfolio">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
      <!--favicons start-->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
@@ -55,14 +52,15 @@
 
 <body>
 
-    <header id="page-header">
-        <div id="page-header-title">
+  <header id="page-header">
+       <div class="container">
+            <div class="row">
+            <div class="col-md-10 col-lg-5">
+    
             <h1><span id="arisu-color">Arisu</span><span id="saktos-color"> Saktos</span></h1>
             <h2>I create stuff, pretty stuff... I call them my little monsters! </h2>
-        </div>
-
-
-    </header>
+                </div>
+                 <div class="col-md-2 col-lg-7 to-the-left">
     <nav id="top-nav" role="navigation">
         <div id="menuToggle">
             <input type="checkbox" />
@@ -78,33 +76,55 @@
             </ul>
         </div>
     </nav>
-
-    <div class="clear"></div>
+          </div>
+           </div></div>
+    </header>
     <section id="middle-section-coding">
-        <p>Projects I've been working on or finished in my free time.</p>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+        <p>Projects/websites I've been working on or finished in my free time.</p>
+                </div></div>
+                <div class="row">
+            <div class="col-lg-6">
         <div class="portfolio-web-box">
-            <img src="images/stone-beige-photo.jpg">
-            <div class="portfolio-web-box__copy">
-                <a href="http://stonebeige.net/" target="_blank">
+            <a href="http://stonebeige.net/" target="_blank"> <img src="images/stone-beige-photo.jpg"></a>
+             <p>   <a href="http://stonebeige.net/" target="_blank" class="coding-link">
                 STONE BEIGE - Online Fashion Magazine
-            </a>
-                <p>Front and back end :)</p>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <p class="portfolio-other">Don't forget to check my random css drawings and cool pens on<a href="https://codepen.io/arisusaktos/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></p>
+            </a></p>
 
+        </div>
+                    </div>
+                        <div class="col-lg-6">
+        <div class="portfolio-web-box">
+            <a href="http://zakatekporabka.pl/" target="_blank">  <img src="images/zakatek-photo.jpg"></a>
+             <p>   <a href="http://zakatekporabka.pl/" target="_blank" class="coding-link">
+                Pensjonat Zakątek
+            </a></p>
+
+        </div>
+                    </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="portfolio-other">Also check my random css drawings and cool pens on<a href="https://codepen.io/arisusaktos/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a> and projects on <a href="https://github.com/arisaktos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+                </div></div>
+                </div>
     </section>
-    <div class="clear"></div>
-    <footer id="page-footer">
-        <div id="footer-inner">
+    <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer-inner">
+  
             Get in touch: <a href="mailto:arisusaktos@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a><a href="https://www.flickr.com/photos/arisusaktos" target="blank"><i class="fa fa-flickr fa-2x" aria-hidden="true"></i></a><a href="https://codepen.io/arisusaktos/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a><a href="https://github.com/arisaktos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/alicja-wolkowska-8559b49b" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 
-            <p id="footer-copyright">&copy; Arisu Saktos 2017</p>
+            <p class="footer-copyright">&copy; Arisu Saktos 2017</p>
         </div>
-
-
+                </div></div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>
