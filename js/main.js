@@ -3,7 +3,7 @@ $(document).ready(function () {
         e.preventDefault();
         var imageSrc = $(this).find("img").attr("data-img");
         var imgCopy = $(this).find("img").attr("alt");
-        var popupImg = $('<img src="' + imageSrc + '" onload="imageLoaded(this)" data-copy="'+imgCopy+'"><p class="imgWidth"></p>');
+        var popupImg = $('<img src="' + imageSrc + '" onload="imageLoaded(this)" data-copy="'+imgCopy+'"><p class="imgWidth hidden"></p>');
         var popup = $('.popup-photo-container');
         
         popup.html(popupImg);
@@ -22,5 +22,5 @@ $(document).ready(function () {
 function imageLoaded(photo, copy){
    $(".imgWidth").css({
             width: $(photo).width() + "px"});
-    $(".imgWidth").text($(photo).data('copy'));
+    $(".imgWidth").text($(photo).data('copy')).show();
 }
