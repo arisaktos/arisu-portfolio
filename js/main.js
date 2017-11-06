@@ -1,1 +1,22 @@
-$(document).ready(function(){$(".middle-section__creations").on("click",function(i){i.preventDefault();var t=$(this).find("img").attr("src"),n=$(this).find("img").attr("alt"),o=$('<div class="my-popup"><div class="popup-photo-container"><img src="'+t+'"><p class="imgWidth">'+n+"</p></div></div>");$(o).prependTo("body").hide().fadeIn(200);var d=$(o).find("img").width();console.log(d+"px"),$(".imgWidth").css({width:d+"px"}),$(".my-popup").on("click",function(){$(this).fadeOut(300,function(){$(this).remove()})})})});
+$(document).ready(function () {
+    $(".middle-section__creations").on("click", function (e) {
+        e.preventDefault();
+        var imageSrc = $(this).find("img").attr("data-img");
+        var imgCopy = $(this).find("img").attr("alt");
+        var popup = $('<div class="my-popup"><div class="popup-photo-container"><img src="' + imageSrc + '" onload="imageLoaded(this)"><p class="imgWidth">' + imgCopy + "</p></div></div>");
+        
+        $(popup).prependTo("body").hide().fadeIn(200);
+
+        $(".my-popup").on("click", function () {
+            $(this).fadeOut(300, function () {
+                $(this).remove()
+            })
+        })
+    })
+});
+
+function imageLoaded(photo){
+   $(".imgWidth").css({
+            width: $(photo).width() + "px"});
+    
+}
