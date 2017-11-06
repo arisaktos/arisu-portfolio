@@ -6,14 +6,14 @@ $(document).ready(function () {
         var popupImg = $('<img src="' + imageSrc + '" onload="imageLoaded(this)"><p class="imgWidth">' + imgCopy + "</p>");
         var popup = $('.popup-photo-container');
         
-        popupImg.prependTo(popup);
+        popup.html(popupImg);
     
         popup.parent().css("display", "flex").fadeIn(200);
          var imgWidth = $(popup).find("img").width();
 
         $(".my-popup").on("click", function () {
             $(this).fadeOut(300, function () {
-                $(this).remove()
+
             })
         })
     })
