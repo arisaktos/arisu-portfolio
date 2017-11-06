@@ -3,9 +3,13 @@ $(document).ready(function () {
         e.preventDefault();
         var imageSrc = $(this).find("img").attr("data-img");
         var imgCopy = $(this).find("img").attr("alt");
-        var popup = $('<div class="my-popup"><div class="popup-photo-container"><img src="' + imageSrc + '" onload="imageLoaded(this)"><p class="imgWidth">' + imgCopy + "</p></div></div>");
+        var popupImg = $('<img src="' + imageSrc + '" onload="imageLoaded(this)"><p class="imgWidth">' + imgCopy + "</p>");
+        var popup = $('.popup-photo-container');
         
-        $(popup).prependTo("body").hide().fadeIn(200);
+        popupImg.prependTo(popup);
+    
+        popup.parent().css("display", "flex").fadeIn(200);
+         var imgWidth = $(popup).find("img").width();
 
         $(".my-popup").on("click", function () {
             $(this).fadeOut(300, function () {
