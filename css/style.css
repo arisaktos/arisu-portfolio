@@ -425,6 +425,7 @@ top: 0;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    z-index: 120;
 }
 
 
@@ -435,7 +436,6 @@ top: 0;
 .my-popup .popup-photo-container
  img
 {
-z-index: 120;
     max-width: 100%;
         -ms-flex-item-align: center;
         align-self: center;
