@@ -13,6 +13,12 @@ body {
          -webkit-animation-timing-function: linear;
          animation-timing-function: linear;
     position: absolute;
+     top: 50%;
+    right: 0;
+    margin: auto;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 110;
     margin-bottom:20px;
 }
