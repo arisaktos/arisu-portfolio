@@ -745,6 +745,7 @@ top: 0;
         overflow: hidden;
         padding-top: 105px;
         background: #ff0084;
+        padding-left: 0px;
         list-style-type: none;
         -webkit-transform-origin: 0% 0%;
         transform-origin: 0% 0%;
@@ -795,6 +796,7 @@ top: 0;
         position: fixed;
         top: 30px;
         right: 5%;
+        z-index: 200;
     }
 
     #menu {
